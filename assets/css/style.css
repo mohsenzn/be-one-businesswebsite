@@ -1,0 +1,38 @@
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. Header Area
+3. Mobile Menu Area
+4. Slider Area
+5. Hire Us Area
+6. Iconbox Area
+7. Bemax Area
+8. Latest Project Area
+9. Choose Us Area
+10. Working With Us Area
+11. Carousel Area
+12. Brand Area
+13. Footer Area
+14. Color NIp
+15. ScrollUp
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 26px;
+}
+/*# sourceMappingURL=style.css.map */
