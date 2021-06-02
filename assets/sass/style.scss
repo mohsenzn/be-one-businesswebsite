@@ -18,27 +18,140 @@
 */
 
 // theme default css
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 
-$mainColor:#4272d7;
-$black:#000;
-$white:#fff;
-$border:#ddd;
-$font-lato: "Lato" ,sans-serif;
+$mainColor: #4272d7;
+$black: #000;
+$white: #fff;
+$border: #ddd;
+$font-lato: "Lato", sans-serif;
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: $font-lato;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 0.9rem;
-    color: #666;
-    line-height:26px;
+body {
+  font-family: $font-lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 26px;
 }
+.bor-left {
+  border-left: 1px solid #666;
+  padding-left: 1.3rem;
+}
+
+// header
+.navbar {
+  border-top: 5px solid $mainColor;
+  border-bottom: 5px solid $mainColor;
+  padding: 20px 0;
+  .navbar-brand {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    span {
+      color: $mainColor;
+    }
+  }
+
+  .nav-item {
+    margin-right: 1.5rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+  .active {
+    color: $mainColor !important;
+  }
+}
+
+.fade.show {
+  opacity: 1;
+  display: inherit;
+}
+
+#search-modal {
+    display:flex !important;
+    justify-content:center;
+    align-items:center;
+  background: transparent;
+  height: 150px;
+  width: 500px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  .modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .modal-content {
+    background: none;
+    border: none;
+  }
+  form{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      .fa-search{
+        position: absolute;
+        right:0;
+        bottom: 15px;
+        font-size: 30px;
+        cursor: pointer;
+        transition: .3s;
+    }
+  }
+  }
+  .search-popup-wrapper input[type=search]{
+    background:none;
+    border: none;
+    border-bottom: 2px solid rgba(221, 221, 221, 0.205);
+    padding: 5px 0;
+    padding-bottom: 10px ;
+    color:$white;
+    font-size: 40px;
+    padding-right: 40px;
+    
+    position: relative;
+    &::placeholder{
+        font-size: 35px !important;
+    }
+   &:focus{
+       border-top:none !important;
+       border-left:none !important;
+       border-right:none !important;
+       outline: none !important;
+
+   }
+}
+
+.search-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(23, 26, 33, 0.95);
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+}
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+// carsusel

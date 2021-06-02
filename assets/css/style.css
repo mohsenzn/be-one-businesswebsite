@@ -35,4 +35,124 @@ body {
   color: #666;
   line-height: 26px;
 }
+
+.bor-left {
+  border-left: 1px solid #666;
+  padding-left: 1.3rem;
+}
+
+.navbar {
+  border-top: 5px solid #4272d7;
+  border-bottom: 5px solid #4272d7;
+  padding: 20px 0;
+}
+
+.navbar .navbar-brand {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar .navbar-brand span {
+  color: #4272d7;
+}
+
+.navbar .nav-item {
+  margin-right: 1.5rem;
+}
+
+.navbar .nav-link {
+  font-size: 1rem;
+}
+
+.navbar .active {
+  color: #4272d7 !important;
+}
+
+.fade.show {
+  opacity: 1;
+  display: inherit;
+}
+
+#search-modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  height: 150px;
+  width: 500px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+}
+
+#search-modal .modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#search-modal .modal-content {
+  background: none;
+  border: none;
+}
+
+#search-modal form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-modal form .fa-search {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.search-popup-wrapper input[type=search] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(221, 221, 221, 0.205);
+  padding: 5px 0;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 40px;
+  padding-right: 40px;
+  position: relative;
+}
+
+.search-popup-wrapper input[type=search]::placeholder {
+  font-size: 35px !important;
+}
+
+.search-popup-wrapper input[type=search]:focus {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  outline: none !important;
+}
+
+.search-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(23, 26, 33, 0.95);
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
